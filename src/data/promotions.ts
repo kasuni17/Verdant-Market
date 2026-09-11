@@ -1,0 +1,72 @@
+import type { Promotion, Coupon } from "../types";
+
+export const promotions: Promotion[] = [
+  {
+    id: "promo-1",
+    name: "Fresh Produce Week",
+    type: "percentage",
+    discountValue: 20,
+    startDate: "2026-08-10",
+    endDate: "2026-08-24",
+    target: "Fruits & Vegetables",
+    status: "active",
+  },
+  {
+    id: "promo-2",
+    name: "Weekend Essentials",
+    type: "percentage",
+    discountValue: 30,
+    startDate: "2026-08-15",
+    endDate: "2026-08-22",
+    target: "Pantry & Grocery",
+    status: "active",
+  },
+  {
+    id: "promo-3",
+    name: "Buy 2 Get 1 Free: Snacks",
+    type: "bogo",
+    discountValue: 100,
+    startDate: "2026-08-01",
+    endDate: "2026-08-31",
+    target: "Snacks",
+    status: "active",
+  },
+  {
+    id: "promo-4",
+    name: "Free Delivery Over $75",
+    type: "free_delivery",
+    discountValue: 0,
+    startDate: "2026-07-01",
+    endDate: "2026-09-30",
+    target: "Storewide",
+    status: "active",
+  },
+  {
+    id: "promo-5",
+    name: "Organic Favourites",
+    type: "category",
+    discountValue: 15,
+    startDate: "2026-08-05",
+    endDate: "2026-08-28",
+    target: "Organic & Natural",
+    status: "active",
+  },
+  {
+    id: "promo-6",
+    name: "Autumn Bakery Launch",
+    type: "percentage",
+    discountValue: 10,
+    startDate: "2026-09-01",
+    endDate: "2026-09-15",
+    target: "Bakery",
+    status: "scheduled",
+  },
+];
+
+export const coupons: Coupon[] = [
+  { id: "cp-1", code: "WELCOME10", discount: 10, type: "percentage", usageLimit: 5000, used: 2140, expiry: "2026-12-31", status: "active" },
+  { id: "cp-2", code: "SAVE15", discount: 15, type: "percentage", usageLimit: 2000, used: 1876, expiry: "2026-10-31", status: "active" },
+  { id: "cp-3", code: "FRESH20", discount: 20, type: "percentage", usageLimit: 1000, used: 640, expiry: "2026-09-30", status: "active" },
+  { id: "cp-4", code: "FREESHIP", discount: 100, type: "fixed", usageLimit: 3000, used: 2990, expiry: "2026-08-31", status: "active" },
+  { id: "cp-5", code: "SUMMER25", discount: 25, type: "percentage", usageLimit: 1500, used: 1500, expiry: "2026-07-31", status: "expired" },
+];
